@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: leonidchetverikovpipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: leonidchetverikovpipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: leonidchetverikovpipelinesjavascriptdocker 
+          image: meetup28.azurecr.io/leonidchetverikovpipelinesjavascriptdocker
+          ports:
+          - containerPort: 80
